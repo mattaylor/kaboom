@@ -25,7 +25,7 @@ import (
 	"runtime"
 	"strings"
 
-	"kaboom/boomer"
+	"github.com/kaboom/boomer"
 )
 
 const (

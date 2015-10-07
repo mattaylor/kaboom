@@ -1,10 +1,11 @@
 # kaboom
 
-KaBoom is an extension of [boom](https://github.com/rakyll/boom) with two new features
+KaBoom is an extension of [boom](https://github.com/rakyll/boom) with a couple of new features
 * Post bodies can be specified as a file name (prefixed by '@') 
-* Post bodies may contain time based template variables
+* Post bodies may contain time based template variables (cutom template vars not yet implmented)
+* Timeouts work
 
-Boom is a tiny program that sends some load to a web application. It's similar to Apache Bench ([ab](http://httpd.apache.org/docs/2.2/programs/ab.html)), but with better availability across different platforms and a less troubling installation experience.
+KaBoom is a tiny program that sends some load to a web application. It's similar to Apache Bench ([ab](http://httpd.apache.org/docs/2.2/programs/ab.html)), but with better availability across different platforms and a less troubling installation experience.
 
 Boom is originally written by Tarek Ziade in Python and is available on [tarekziade/boom](https://github.com/tarekziade/boom). But, due to its dependency requirements and my personal annoyance of maintaining concurrent programs in Python, I decided to rewrite it in Go.
 
@@ -31,7 +32,7 @@ Options:
 
   -m  HTTP method, one of GET, POST, PUT, DELETE, HEAD, OPTIONS.
   -h  Custom HTTP headers, name1:value1;name2:value2.
-  -t  Timeout in ms.
+  -t  Timeout in seconds.
   -A  HTTP Accept header.
   -d  HTTP request body. or fileName
   -T  Content-type, defaults to "text/html".

@@ -1,13 +1,13 @@
 # kaboom
 
-KaBoom is an extension of [boom](https://github.com/rakyll/boom) with a couple of new features
+KaBoom is an fork and extension of [boom](https://github.com/rakyll/boom) with a couple of new features
 * Post bodies can be specified as a file name (prefixed by '@') 
 * Post bodies may contain time based template variables (cutom template vars not yet implmented)
 * Timeouts work
 
 KaBoom is a tiny program that sends some load to a web application. It's similar to Apache Bench ([ab](http://httpd.apache.org/docs/2.2/programs/ab.html)), but with better availability across different platforms and a less troubling installation experience.
 
-Boom is originally written by Tarek Ziade in Python and is available on [tarekziade/boom](https://github.com/tarekziade/boom). 
+Boom was originally written by Tarek Ziade in Python and is available on [tarekziade/boom](https://github.com/tarekziade/boom).
 
 ## Installation
 

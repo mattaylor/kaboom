@@ -7,19 +7,19 @@ KaBoom is an extension of [boom](https://github.com/rakyll/boom) with a couple o
 
 KaBoom is a tiny program that sends some load to a web application. It's similar to Apache Bench ([ab](http://httpd.apache.org/docs/2.2/programs/ab.html)), but with better availability across different platforms and a less troubling installation experience.
 
-Boom is originally written by Tarek Ziade in Python and is available on [tarekziade/boom](https://github.com/tarekziade/boom). But, due to its dependency requirements and my personal annoyance of maintaining concurrent programs in Python, I decided to rewrite it in Go.
+Boom is originally written by Tarek Ziade in Python and is available on [tarekziade/boom](https://github.com/tarekziade/boom). 
 
 ## Installation
 
 Simple as it takes to type the following command:
 
-    go get github.com/mattaylor/kboom
+    go get github.com/mattaylor/kaboom
 
 ## Usage
 
-Boom supports custom headers, request body and basic authentication. It runs provided number of requests in the provided concurrency level, and prints stats.
+KaBoom supports custom headers, request body and basic authentication. It runs provided number of requests in the provided concurrency level, and prints stats.
 ~~~
-Usage: boom [options...] <url>
+Usage: kaboom [options...] <url>
 
 Options:
   -n  Number of requests to run.
@@ -49,7 +49,7 @@ Options:
 
 This is what happens when you run Boom:
 
-	% boom -n 1000 -c 100 https://google.com
+	% kaboom -n 1000 -c 100 https://google.com
 	1000 / 1000 ∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎ 100.00 % 
 
 	Summary:
@@ -87,8 +87,6 @@ This is what happens when you run Boom:
 
 ## License
 
-Copyright 2014 Google Inc. All Rights Reserved.
-
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
@@ -99,5 +97,5 @@ Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
-limitations under the License. ![Analytics](https://ga-beacon.appspot.com/UA-46881978-1/boom?pixel)
+limitations under the License. 
 
